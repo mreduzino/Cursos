@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+    <meta name="author" content="mreduzino">
+</head>
+<body>
+    <h1>Exercício 2</h1>
+    <script>
+        //pedir para o usuario digitar um número
+        let n1 = parseFloat(prompt("Digite um número: "))
+        //pedir para o usuario digitar outro numero
+        let n2 = parseFloat(prompt("Digite outro número: "))
+        let media = (n1+n2)/2
+        
+        //mostrar se a média é menor ou igual a 4 ou se um dos números é igual a 0
+        alert("O aluno está aprovado? " + ((media <= 4) || (n1 == 0) || (n2 == 0)))
+    </script>
+</body>
+</html>
