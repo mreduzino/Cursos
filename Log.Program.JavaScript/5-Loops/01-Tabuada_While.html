@@ -1,0 +1,29 @@
+<!-- Tabuada usando o while -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops - Tabuada</title>
+    <meta name="author" content="mreduzino">
+</head>
+
+<body>
+    <h1>Loops - Tabuada</h1>
+    <script>
+        let n = parseInt(prompt("Digite um número para ver a tabuada: "))
+        if (isNaN(n)) {
+            alert("Digite apenas números!")
+        }
+        else {
+            let i = 0
+            while (i <= 1000) {
+                document.write(n + " x " + i + " = " + n * i + "<br>")
+                i++
+            }
+        }
+    </script>
+</body>
+</html>

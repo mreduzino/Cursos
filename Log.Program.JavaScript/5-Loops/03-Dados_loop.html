@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Dado</title>
+    <meta name="author" content="mreduzino">
+</head>
+<body>
+    <script>
+        
+        let dado1 = parseInt(Math.random() * 6 + 1)
+        let dado2 = parseInt(Math.random() * 6 + 1)
+
+        let contador = 1
+
+        while (dado1 !== dado2) {
+            console.log(`Dado 1: ${dado1} | Dado 2: ${dado2}`)
+            dado1 = parseInt(Math.random() * 6 + 1)
+            dado2 = parseInt(Math.random() * 6 + 1)
+            contador++
+        }
+        console.log("Os dados foram jogados " + contador + "vezes até que os números fossem iguais. O numero sorteado foi: " + dado1)
+
+        console.log("--------------------------------------------")
+
+        dado1 = parseInt(Math.random() * 6 + 1)
+        dado2 = parseInt(Math.random() * 6 + 1)
+        contador = 1
+        do{
+            console.log(`Dado 1: ${dado1} | Dado 2: ${dado2}`)
+            contador++
+            dado1 = parseInt(Math.random() * 6 + 1)
+            dado2 = parseInt(Math.random() * 6 + 1)
+         } while (dado1 !== dado2)
+
+        console.log("Os dados foram jogados " + contador + "vezes até que os números fossem iguais. O numero sorteado foi: " + dado1)
+    </script>
+</body>
+</html>

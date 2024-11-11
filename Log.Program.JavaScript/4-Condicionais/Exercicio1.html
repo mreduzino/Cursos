@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios if else</title>
+    <meta name="author" content="mreduzino">
+</head>
+<body>
+    <h1>Exercício if else</h1>
+    <script>
+        // Pedir para o usuários digitar dois números
+        let nota1 = parseFloat(prompt("Digite a primeira nota: "))
+        let nota2 = parseFloat(prompt("Digite a segunda nota: "))
+
+        // Calcular a média
+        let media = (nota1 + nota2) / 2
+        
+        // Mostrar a mensagem "APROVADO!" caso a média seja maior que 4
+        if (media >4 && nota1>0 && nota2>0){
+            alert("APROVADO!")
+        } else {
+            alert("REPROVADO!")
+        }
+    </script>
+</body>
+</html>
